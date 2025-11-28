@@ -1,0 +1,342 @@
+/* Custom CSS for SkyLink Website */
+
+/* Base Styles and CSS Variables */
+:root {
+    /* Updated Palette */
+    --primary-color: #38bdf8;   /* Sky-400 */
+    --secondary-color: #2dd4bf; /* Teal-400 */
+    --accent-color: #fbbf24;    /* Amber-400 */
+    --text-color: #292524;      /* Stone-800 */
+    --bg-color: #fafaf9;        /* Stone-50 */
+    --transition-speed: 0.3s;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Screen Reader Only - Accessibility */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.sr-only.focus\:not-sr-only:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+}
+
+/* Text Gradient Effect */
+.text-gradient {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% auto;
+    animation: gradient-shift 3s ease infinite;
+}
+
+@keyframes gradient-shift {
+    0%, 100% {
+        background-position: 0% center;
+    }
+    50% {
+        background-position: 100% center;
+    }
+}
+
+/* Fade In Up Animation */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), transform 0.8s cubic-bezier(0.22, 1, 0.36, 1); /* Smoother bezier */
+}
+
+.fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animation Delays */
+.animation-delay-200 {
+    animation-delay: 0.1s; /* Reduced slightly for snappier feel */
+    transition-delay: 0.1s;
+}
+
+.animation-delay-300 {
+    animation-delay: 0.15s;
+    transition-delay: 0.15s;
+}
+
+.animation-delay-400 {
+    animation-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.animation-delay-600 {
+    animation-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+
+/* Pulse Animation for Decorative Elements */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0.6;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.4;
+        transform: scale(1.05);
+    }
+}
+
+.animate-pulse {
+    animation: pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite; /* Slower pulse */
+}
+
+/* Modal Styles */
+.modal {
+    transition: opacity 0.3s ease-out;
+}
+
+.modal.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal:not(.hidden) {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-backdrop {
+    animation: fadeIn 0.3s ease-out;
+}
+
+.modal-content {
+    animation: scaleUp 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); /* Bouncy scale up */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes scaleUp {
+    from {
+        opacity: 0;
+        transform: scale(0.95) translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+/* Tab System Styles - Rounded Pills */
+.tab-button {
+    transition: all 0.3s ease;
+}
+
+.tab-button.active {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+    box-shadow: 0 4px 6px -1px rgba(56, 189, 248, 0.3);
+}
+
+.tab-content {
+    animation: fadeInContent 0.5s ease-out;
+}
+
+@keyframes fadeInContent {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Accordion Styles */
+.accordion-button {
+    transition: all 0.3s ease;
+}
+
+.accordion-button:hover {
+    background-color: #f5f5f4; /* stone-100 */
+}
+
+.accordion-button.active {
+    background-color: #f0f9ff; /* sky-50 */
+    color: var(--primary-color);
+}
+
+.accordion-button.active .text-stone-900 {
+    color: var(--primary-color);
+}
+
+.accordion-button svg {
+    transition: transform 0.3s ease;
+}
+
+.accordion-button.active svg {
+    transform: rotate(180deg);
+    color: var(--primary-color);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0, 1, 0, 1), padding 0.4s ease;
+}
+
+.accordion-content.active {
+    max-height: 1000px;
+    transition: max-height 0.5s ease-in-out;
+}
+
+/* Form Focus States */
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.15);
+}
+
+/* Form Validation Styles */
+.form-error {
+    color: #ef4444;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    display: none;
+}
+
+.form-error.active {
+    display: block;
+    animation: shake 0.3s ease-in-out;
+}
+
+input.error,
+textarea.error,
+select.error {
+    border-color: #ef4444;
+    box-shadow: 0 0 0 1px #ef4444;
+}
+
+input.success,
+textarea.success,
+select.success {
+    border-color: #10b981;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-4px); }
+    75% { transform: translateX(4px); }
+}
+
+/* Loading Spinner */
+.spinner {
+    border: 3px solid rgba(56, 189, 248, 0.1);
+    border-radius: 50%;
+    border-top: 3px solid var(--primary-color);
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Image Lazy Loading Fade In */
+img[loading="lazy"] {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+img[loading="lazy"].loaded {
+    opacity: 1;
+}
+
+/* Mobile Menu Animation */
+#mobile-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0, 1, 0, 1);
+}
+
+#mobile-menu.active {
+    max-height: 500px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+}
+
+/* Scroll Progress Bar */
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    z-index: 100;
+    transition: width 0.1s ease;
+    border-radius: 0 2px 2px 0;
+}
+
+/* Focus Visible for Better Accessibility */
+*:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fafaf9; /* Stone-50 */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #d6d3d1; /* Stone-300 */
+    border-radius: 6px;
+    border: 3px solid #fafaf9; /* Creates padding effect */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a8a29e; /* Stone-400 */
+}
+
+/* Responsive Typography */
+@media (max-width: 640px) {
+    h1 { font-size: 2.25rem; }
+    h2 { font-size: 1.875rem; }
+    h3 { font-size: 1.5rem; }
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+    .text-gradient {
+        -webkit-text-fill-color: currentColor;
+        background: none;
+    }
+}

@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore SkyLink's advanced drone fleet and delivery technology. From compact courier drones to heavy-lift cargo models.">
+    <meta name="keywords" content="delivery drones, autonomous drones, drone fleet, delivery technology, UAV">
+    <meta name="author" content="SkyLink">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Products - SkyLink Drone Fleet">
+    <meta property="og:description" content="Advanced autonomous drones for every delivery need">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://skylink-delivery.com/products">
+
+    <title>Our Drone Fleet - SkyLink Delivery</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css?v=1.0.0">
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#38bdf8',   // Softer Sky Blue
+                        secondary: '#2dd4bf', // Softer Teal
+                        accent: '#fbbf24',    // Warm Amber
+                        cream: '#fdfbf7',     // Off-white
+                        stone: {
+                            50: '#fafaf9',
+                            100: '#f5f5f4',
+                            800: '#292524',
+                            900: '#1c1917',
+                            950: '#0c0a09',
+                        }
+                    },
+                    boxShadow: {
+                        'soft': '0 20px 40px -15px rgba(0, 0, 0, 0.05)',
+                        'glow': '0 0 20px rgba(56, 189, 248, 0.3)',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans antialiased bg-stone-50 text-stone-800">
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-primary focus:text-white focus:rounded-full">
+        Skip to main content
+    </a>
+
+    <!-- Navigation -->
+    <nav class="bg-white/80 backdrop-blur-md shadow-sm fixed w-full top-0 z-40 transition-all duration-300" role="navigation" aria-label="Main navigation">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="flex items-center space-x-2 group">
+                        <div class="bg-primary/10 p-2 rounded-xl group-hover:bg-primary/20 transition-colors">
+                            <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+                            </svg>
+                        </div>
+                        <span class="text-2xl font-bold text-stone-800 tracking-tight">SkyLink</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-stone-600 hover:text-primary transition-colors font-medium">Home</a>
+                    <a href="about.html" class="text-stone-600 hover:text-primary transition-colors font-medium">About</a>
+                    <a href="services.html" class="text-stone-600 hover:text-primary transition-colors font-medium">Services</a>
+                    <a href="products.html" class="text-primary font-semibold hover:text-primary/80 transition-colors" aria-current="page">Products</a>
+                    <a href="blog.html" class="text-stone-600 hover:text-primary transition-colors font-medium">Blog</a>
+                    <a href="contact.html" class="text-stone-600 hover:text-primary transition-colors font-medium">Contact</a>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="contact.html" class="bg-stone-900 text-white px-6 py-2.5 rounded-full hover:bg-stone-800 transition-all transform hover:-translate-y-0.5 shadow-lg shadow-stone-900/20 font-medium">
+                        Get Started
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-button" class="md:hidden inline-flex items-center justify-center p-2 rounded-xl text-stone-600 hover:text-primary hover:bg-primary/5 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary"
+                        aria-expanded="false"
+                        aria-controls="mobile-menu"
+                        aria-label="Toggle navigation menu">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-stone-100" role="menu">
+            <div class="px-4 pt-4 pb-6 space-y-2">
+                <a href="index.html" class="block px-4 py-3 rounded-xl text-stone-600 hover:bg-stone-50 hover:text-primary transition-colors" role="menuitem">Home</a>
+                <a href="about.html" class="block px-4 py-3 rounded-xl text-stone-600 hover:bg-stone-50 hover:text-primary transition-colors" role="menuitem">About</a>
+                <a href="services.html" class="block px-4 py-3 rounded-xl text-stone-600 hover:bg-stone-50 hover:text-primary transition-colors" role="menuitem">Services</a>
+                <a href="products.html" class="block px-4 py-3 rounded-xl text-primary font-semibold bg-primary/5" role="menuitem">Products</a>
+                <a href="blog.html" class="block px-4 py-3 rounded-xl text-stone-600 hover:bg-stone-50 hover:text-primary transition-colors" role="menuitem">Blog</a>
+                <a href="contact.html" class="block px-4 py-3 rounded-xl text-stone-600 hover:bg-stone-50 hover:text-primary transition-colors" role="menuitem">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="relative pt-32 pb-56 overflow-hidden bg-stone-900 text-white">
+            <!-- Background decorative blobs -->
+            <div class="absolute top-0 left-0 w-full h-full overflow-hidden z-0 opacity-40">
+                <div class="absolute top-[-10%] left-[-10%] w-3/4 h-3/4 bg-primary/20 rounded-full blur-[120px] animate-pulse"></div>
+                <div class="absolute bottom-[-10%] right-[-10%] w-3/4 h-3/4 bg-accent/20 rounded-full blur-[120px] animate-pulse" style="animation-delay: 2s;"></div>
+            </div>
+
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div class="inline-block px-4 py-1.5 mb-6 rounded-full bg-stone-800/50 border border-stone-700 backdrop-blur-sm fade-in-up">
+                    <span class="text-primary font-medium text-sm tracking-wide uppercase"> Our Technology</span>
+                </div>
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 fade-in-up leading-tight">
+                    Meet Our
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Drone Fleet</span>
+                </h1>
+                <p class="text-lg md:text-xl text-stone-300 max-w-3xl mx-auto fade-in-up animation-delay-200 font-light leading-relaxed">
+                    State-of-the-art autonomous drones engineered for safety, efficiency, and reliability. From lightweight courier models to heavy-duty cargo carriers.
+                </p>
+            </div>
+
+            <!-- Wave Separator -->
+            <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-10">
+                <svg class="relative block w-[calc(100%+1.3px)] h-[100px] text-stone-50" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="currentColor"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Product Grid -->
+        <section class="py-24 bg-stone-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Product 1: SkyHawk Express -->
+                    <article class="fade-in-up bg-white rounded-[2.5rem] overflow-hidden shadow-soft hover:shadow-xl transition-all group border border-stone-100">
+                        <div class="bg-gradient-to-br from-primary/10 to-stone-100 p-10 flex items-center justify-center h-72 relative overflow-hidden">
+                            <div class="absolute inset-0 bg-white/30 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity z-10"></div>
+                            <svg class="w-40 h-40 text-primary relative z-0 group-hover:scale-110 transition-transform duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+                            </svg>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold text-stone-900 mb-2">SkyHawk Express</h3>
+                            <p class="text-primary font-semibold mb-4">Lightweight Courier</p>
+                            <p class="text-stone-600 mb-6 leading-relaxed text-sm">
+                                Our fastest drone for urgent deliveries. Perfect for documents, small parcels, and medical supplies.
+                            </p>
+                            <div class="space-y-3 mb-8 text-sm">
+                                <div class="flex justify-between border-b border-stone-100 pb-2">
+                                    <span class="text-stone-500">Max Payload</span>
+                                    <span class="font-bold text-stone-800">2 kg</span>
+                                </div>
+                                <div class="flex justify-between border-b border-stone-100 pb-2">
+                                    <span class="text-stone-500">Range</span>
+                                    <span class="font-bold text-stone-800">15 km</span>
+                                </div>
+                                <div class="flex justify-between border-b border-stone-100 pb-2">
+                                    <span class="text-stone-500">Speed</span>
+                                    <span class="font-bold text-stone-800">80 km/h</span>
+                                </div>
+                            </div>
+                            <button onclick="openModal('product-1-modal')"
+                                    class="w-full bg-stone-900 text-white px-6 py-3.5 rounded-full hover:bg-stone-800 transition-all font-semibold shadow-lg">
+                                View Details
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Product 2: SkyRunner Standard -->
+                    <article class="fade-in-up animation-delay-200 bg-white rounded-[2.5rem] overflow-hidden shadow-soft hover:shadow-xl transition-all group border border-stone-100">
+                        <div class="bg-gradient-to-br from-secondary/10 to-stone-100 p-10 flex items-center justify-center h-72 relative overflow-hidden">
+                            <div class="absolute inset-0 bg-white/30 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity z-10"></div>
+                            <svg class="w-40 h-40 text-secondary relative z-0 group-hover:scale-110 transition-transform duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+                            </svg>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold text-stone-900 mb-2">SkyRunner Standard</h3>
+                            <p class="text-secondary font-semibold mb-4">All-Purpose Delivery</p>
+                            <p class="text-stone-600 mb-6 leading-relaxed text-sm">
+                                Versatile workhorse for e-commerce and retail. Handles most everyday deliveries with ease.
+                            </p>
+                            <div class="space-y-3 mb-8 text-sm">
+                                <div class="flex justify-between border-b border-stone-100 pb-2">
+                                    <span class="text-stone-500">Max Payload</span>
+                                    <span class="font-bold text-stone-800">5 kg</span>
+                                </div>
+                                <div class="flex justify-between border-b border-stone-100 pb-2">
+                                    <span class="text-stone-500">Range</span>
+                                    <span class="font-bold text-stone-800">25 km</span>
+                                </div>
+                                <div class="flex justify-between border-b border-stone-100 pb-2">
+                                    <span class="text-stone-500">Speed</span>
+                                    <span class="font-bold text-stone-800">65 km/h</span>
+                                </div>
+                            </div>
+                            <button onclick="openModal('product-2-modal')"
+                                    class="w-full bg-secondary text-white px-6 py-3.5 rounded-full hover:bg-secondary/90 transition-all font-semibold shadow-lg shadow-secondary/20">
+                                View Details
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Product 3: SkyLifter Pro -->
+                    <article class="fade-in-up animation-delay-400 bg-white rounded-[2.5rem] overflow-hidden shadow-soft hover:shadow-xl transition-all group border border-stone-100">
+                        <div class="bg-gradient-to-br from-accent/10 to-stone-100 p-10 flex items-center justify-center h-72 relative overflow-hidden">
+                            <div class="absolute inset-0 bg-white/30 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity z-10"></div>
+                            <svg class="w-40 h-40 text-accent relative z-0 group-hover:scale-110 transition-transform duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+                            </svg>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold text-stone-900 mb-2">SkyLifter Pro</h3>
+                            <p class="text-accent font-semibold mb-4">Heavy-Duty Cargo</p>
+                            <p class="text-stone-600 mb-6 leading-relaxed text-sm">
+                                Maximum capacity for larger packages and bulk deliveries. Built for enterprise logistics.
+                            </p>
+                            <div class="space-y-3 mb-8 text-sm">
+                                <div class="flex justify-between border-b border-stone-100 pb-2">
+                                    <span class="text-stone-500">Max Payload</span>
+                                    <span class="font-bold text-stone-800">10 kg</span>
+                                </div>
+                                <div class="flex justify-between border-b border-stone-100 pb-2">
+                                    <span class="text-stone-500">Range</span>
+                                    <span class="font-bold text-stone-800">30 km</span>
+                                </div>
+                                <div class="flex justify-between border-b border-stone-100 pb-2">
+                                    <span class="text-stone-500">Speed</span>
+                                    <span class="font-bold text-stone-800">55 km/h</span>
+                                </div>
+                            </div>
+                            <button onclick="openModal('product-3-modal')"
+                                    class="w-full bg-accent text-white px-6 py-3.5 rounded-full hover:bg-accent/90 transition-all font-semibold shadow-lg shadow-accent/20">
+                                View Details
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technology Features -->
+        <section class="py-24 bg-stone-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16 fade-in-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-stone-900 mb-4">
+                        Advanced Technology
+                    </h2>
+                    <p class="text-lg text-stone-600 max-w-2xl mx-auto">
+                        Every drone in our fleet features cutting-edge autonomous systems
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="fade-in-up bg-white p-8 rounded-[2rem] text-center shadow-sm border border-stone-100">
+                        <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6 text-primary">
+                            <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-stone-900 mb-2">Computer Vision</h3>
+                        <p class="text-sm text-stone-500 leading-relaxed">Real-time object detection and obstacle avoidance</p>
+                    </div>
+
+                    <div class="fade-in-up animation-delay-200 bg-white p-8 rounded-[2rem] text-center shadow-sm border border-stone-100">
+                        <div class="w-16 h-16 bg-secondary/10 rounded-2xl flex items-center justify-center mx-auto mb-6 text-secondary">
+                            <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-stone-900 mb-2">LiDAR Sensors</h3>
+                        <p class="text-sm text-stone-500 leading-relaxed">360° environmental mapping and precision landing</p>
+                    </div>
+
+                    <div class="fade-in-up animation-delay-400 bg-white p-8 rounded-[2rem] text-center shadow-sm border border-stone-100">
+                        <div class="w-16 h-16 bg-accent/10 rounded-2xl flex items-center justify-center mx-auto mb-6 text-accent">
+                            <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-stone-900 mb-2">Smart Battery</h3>
+                        <p class="text-sm text-stone-500 leading-relaxed">Hot-swappable cells with 45-minute flight time</p>
+                    </div>
+
+                    <div class="fade-in-up animation-delay-600 bg-white p-8 rounded-[2rem] text-center shadow-sm border border-stone-100">
+                        <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6 text-primary">
+                            <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-stone-900 mb-2">5G Connectivity</h3>
+                        <p class="text-sm text-stone-500 leading-relaxed">Real-time telemetry and live video streaming</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparison Table -->
+        <section class="py-24 bg-white">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16 fade-in-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-stone-900 mb-4">Compare Models</h2>
+                    <p class="text-lg text-stone-600">Find the perfect drone for your delivery needs</p>
+                </div>
+
+                <div class="overflow-x-auto fade-in-up animation-delay-200 rounded-[2rem] shadow-soft border border-stone-100">
+                    <table class="w-full bg-white">
+                        <thead class="bg-stone-50">
+                            <tr>
+                                <th class="px-8 py-6 text-left text-sm font-bold text-stone-900 uppercase tracking-wider">Feature</th>
+                                <th class="px-8 py-6 text-center text-sm font-bold text-primary uppercase tracking-wider">SkyHawk Express</th>
+                                <th class="px-8 py-6 text-center text-sm font-bold text-secondary uppercase tracking-wider">SkyRunner Standard</th>
+                                <th class="px-8 py-6 text-center text-sm font-bold text-accent uppercase tracking-wider">SkyLifter Pro</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-stone-100">
+                            <tr>
+                                <td class="px-8 py-5 text-sm text-stone-900 font-semibold">Max Payload</td>
+                                <td class="px-8 py-5 text-sm text-stone-600 text-center">2 kg</td>
+                                <td class="px-8 py-5 text-sm text-stone-600 text-center">5 kg</td>
+                                <td class="px-8 py-5 text-sm text-stone-600 text-center">10 kg</td>
+                            </tr>
+                            <tr class="bg-stone-50/50">
+                                <td class="px-8 py-5 text-sm text-stone-900 font-semibold">Max Range</td>
+                                <td class="px-8 py-5 text-sm text-stone-600 text-center">15 km</td>
+                                <td class="px-8 py-5 text-sm text-stone-600 text-center">25 km</td>
+                                <td class="px-8 py-5 text-sm text-stone-600 text-center">30 km</td>
+                            </tr>
+                            <tr>
+                                <td class="px-8 py-5 text-sm text-stone-900 font-semibold">Top Speed</td>
+                                <td class="px-8 py-5 text-sm text-stone-600 text-center">80 km/h</td>
+                                <td class="px-8 py-5 text-sm text-stone-600 text-center">65 km/h</td>
+                                <td class="px-8 py-5 text-sm text-stone-600 text-center">55 km/h</td>
+                            </tr>
+                            <tr class="bg-stone-50/50">
+                                <td class="px-8 py-5 text-sm text-stone-900 font-semibold">Flight Time</td>
+                                <td class="px-8 py-5 text-sm text-stone-600 text-center">35 min</td>
+                                <td class="px-8 py-5 text-sm text-stone-600 text-center">40 min</td>
+                                <td class="px-8 py-5 text-sm text-stone-600 text-center">45 min</td>
+                            </tr>
+                            <tr>
+                                <td class="px-8 py-5 text-sm text-stone-900 font-semibold">Weather Resistance</td>
+                                <td class="px-8 py-5 text-sm text-stone-600 text-center">IP54</td>
+                                <td class="px-8 py-5 text-sm text-stone-600 text-center">IP65</td>
+                                <td class="px-8 py-5 text-sm text-stone-600 text-center">IP67</td>
+                            </tr>
+                            <tr class="bg-stone-50/50">
+                                <td class="px-8 py-5 text-sm text-stone-900 font-semibold">Best For</td>
+                                <td class="px-8 py-5 text-sm text-stone-600 text-center">Urgent deliveries</td>
+                                <td class="px-8 py-5 text-sm text-stone-600 text-center">E-commerce</td>
+                                <td class="px-8 py-5 text-sm text-stone-600 text-center">Enterprise</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-stone-950 text-stone-400 pt-20 pb-10" role="contentinfo">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12 mb-16">
+                <!-- Company Info -->
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center space-x-2 mb-6">
+                        <div class="bg-stone-800 p-2 rounded-lg">
+                            <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+                            </svg>
+                        </div>
+                        <span class="text-2xl font-bold text-white">SkyLink</span>
+                    </div>
+                    <p class="text-stone-500 mb-6 leading-relaxed">
+                        Revolutionizing delivery with autonomous drone technology since 2022.
+                    </p>
+                    <!-- Social Media Links -->
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-stone-900 flex items-center justify-center hover:bg-primary hover:text-white transition-all" aria-label="Follow us on Twitter">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-stone-900 flex items-center justify-center hover:bg-primary hover:text-white transition-all" aria-label="Follow us on LinkedIn">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-stone-900 flex items-center justify-center hover:bg-primary hover:text-white transition-all" aria-label="Follow us on GitHub">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-white font-bold mb-6">Company</h3>
+                    <ul class="space-y-4">
+                        <li><a href="about.html" class="hover:text-primary transition-colors">About Us</a></li>
+                        <li><a href="blog.html" class="hover:text-primary transition-colors">Blog</a></li>
+                        <li><a href="contact.html" class="hover:text-primary transition-colors">Contact</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Careers</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h3 class="text-white font-bold mb-6">Resources</h3>
+                    <ul class="space-y-4">
+                        <li><a href="services.html" class="hover:text-primary transition-colors">Services</a></li>
+                        <li><a href="products.html" class="hover:text-primary transition-colors">Products</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Documentation</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">API Reference</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div>
+                    <h3 class="text-white font-bold mb-6">Legal</h3>
+                    <ul class="space-y-4">
+                        <li><a href="#" class="hover:text-primary transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Cookie Policy</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">GDPR</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="border-t border-stone-900 pt-8 text-center text-stone-600 text-sm">
+                <p>&copy; 2024 SkyLink Drone Delivery. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Product Detail Modals -->
+
+    <!-- SkyHawk Express Modal -->
+    <div id="product-1-modal" class="modal hidden fixed inset-0 z-50 overflow-y-auto" role="dialog" aria-labelledby="product-1-title" aria-modal="true">
+        <div class="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:p-0">
+            <div class="modal-backdrop fixed inset-0 bg-stone-900/75 transition-opacity backdrop-blur-sm" onclick="closeModal('product-1-modal')"></div>
+            <div class="modal-content inline-block align-bottom bg-white rounded-[2.5rem] text-left overflow-hidden shadow-2xl transform transition-all sm:my-8 sm:align-middle sm:max-w-4xl sm:w-full p-8">
+                <div class="bg-white">
+                    <div class="flex justify-between items-start mb-8">
+                        <div>
+                            <h3 id="product-1-title" class="text-3xl font-bold text-stone-900">SkyHawk Express</h3>
+                            <p class="text-primary font-semibold mt-1 text-lg">Lightweight Courier Drone</p>
+                        </div>
+                        <button onclick="closeModal('product-1-modal')" class="bg-stone-100 p-2 rounded-full text-stone-400 hover:text-stone-600 hover:bg-stone-200 transition-colors" aria-label="Close modal">
+                            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-10">
+                        <div>
+                            <div class="bg-gradient-to-br from-primary/10 to-stone-100 rounded-[2rem] p-12 flex items-center justify-center mb-8 aspect-square">
+                                <svg class="w-48 h-48 text-primary drop-shadow-lg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+                                </svg>
+                            </div>
+
+                            <div class="space-y-4">
+                                <h4 class="font-bold text-stone-900 text-lg">Key Features</h4>
+                                <ul class="space-y-3 text-stone-600">
+                                    <li class="flex items-start">
+                                        <div class="bg-primary/10 p-1 rounded-full mr-3 mt-0.5">
+                                            <svg class="w-4 h-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                            </svg>
+                                        </div>
+                                        <span>Compact carbon fiber frame (42cm diagonal)</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <div class="bg-primary/10 p-1 rounded-full mr-3 mt-0.5">
+                                            <svg class="w-4 h-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                            </svg>
+                                        </div>
+                                        <span>Quad-rotor design for maximum agility</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <div class="bg-primary/10 p-1 rounded-full mr-3 mt-0.5">
+                                            <svg class="w-4 h-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                            </svg>
+                                        </div>
+                                        <span>Temperature-controlled cargo bay</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col justify-between">
+                            <div>
+                                <h4 class="font-bold text-stone-900 mb-6 text-lg">Technical Specifications</h4>
+                                <div class="space-y-4 mb-8">
+                                    <div class="flex justify-between py-3 border-b border-stone-100">
+                                        <span class="text-stone-500">Dimensions</span>
+                                        <span class="font-semibold text-stone-800">42 x 42 x 18 cm</span>
+                                    </div>
+                                    <div class="flex justify-between py-3 border-b border-stone-100">
+                                        <span class="text-stone-500">Max Payload</span>
+                                        <span class="font-semibold text-stone-800">2 kg</span>
+                                    </div>
+                                    <div class="flex justify-between py-3 border-b border-stone-100">
+                                        <span class="text-stone-500">Max Speed</span>
+                                        <span class="font-semibold text-stone-800">80 km/h</span>
+                                    </div>
+                                    <div class="flex justify-between py-3 border-b border-stone-100">
+                                        <span class="text-stone-500">Flight Time</span>
+                                        <span class="font-semibold text-stone-800">35 minutes</span>
+                                    </div>
+                                    <div class="flex justify-between py-3 border-b border-stone-100">
+                                        <span class="text-stone-500">Noise Level</span>
+                                        <span class="font-semibold text-stone-800">62 dB @ 10m</span>
+                                    </div>
+                                </div>
+
+                                <div class="bg-primary/5 p-6 rounded-2xl mb-8 border border-primary/10">
+                                    <p class="text-stone-700 leading-relaxed">
+                                        <strong>Ideal for:</strong> Urgent medical deliveries, legal documents, electronics, pharmaceuticals, and small e-commerce packages requiring rapid delivery.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-4">
+                                <a href="contact.html" class="flex-1 bg-stone-900 text-white px-6 py-4 rounded-full hover:bg-stone-800 transition-all font-semibold text-center shadow-lg">
+                                    Request Quote
+                                </a>
+                                <button onclick="closeModal('product-1-modal')" class="flex-1 border-2 border-stone-200 text-stone-600 px-6 py-4 rounded-full hover:bg-stone-50 transition-all font-semibold">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SkyRunner Standard Modal -->
+    <div id="product-2-modal" class="modal hidden fixed inset-0 z-50 overflow-y-auto" role="dialog" aria-labelledby="product-2-title" aria-modal="true">
+        <div class="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:p-0">
+            <div class="modal-backdrop fixed inset-0 bg-stone-900/75 transition-opacity backdrop-blur-sm" onclick="closeModal('product-2-modal')"></div>
+            <div class="modal-content inline-block align-bottom bg-white rounded-[2.5rem] text-left overflow-hidden shadow-2xl transform transition-all sm:my-8 sm:align-middle sm:max-w-4xl sm:w-full p-8">
+                <div class="bg-white">
+                    <div class="flex justify-between items-start mb-8">
+                        <div>
+                            <h3 id="product-2-title" class="text-3xl font-bold text-stone-900">SkyRunner Standard</h3>
+                            <p class="text-secondary font-semibold mt-1 text-lg">All-Purpose Delivery Drone</p>
+                        </div>
+                        <button onclick="closeModal('product-2-modal')" class="bg-stone-100 p-2 rounded-full text-stone-400 hover:text-stone-600 hover:bg-stone-200 transition-colors" aria-label="Close modal">
+                            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="prose max-w-none text-stone-600 mb-8">
+                        <p class="mb-4 text-lg">
+                            The SkyRunner Standard is our most versatile drone, designed to handle the majority of everyday delivery scenarios. It strikes the perfect balance between payload capacity, range, and speed.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div class="bg-stone-50 p-6 rounded-2xl text-center">
+                            <div class="text-3xl font-bold text-secondary mb-1">5 kg</div>
+                            <div class="text-sm text-stone-500 font-medium uppercase tracking-wider">Max Payload</div>
+                        </div>
+                        <div class="bg-stone-50 p-6 rounded-2xl text-center">
+                            <div class="text-3xl font-bold text-secondary mb-1">25 km</div>
+                            <div class="text-sm text-stone-500 font-medium uppercase tracking-wider">Max Range</div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <a href="contact.html" class="flex-1 bg-secondary text-white px-6 py-4 rounded-full hover:bg-secondary/90 transition-all font-semibold text-center shadow-lg shadow-secondary/20">
+                            Request Quote
+                        </a>
+                        <button onclick="closeModal('product-2-modal')" class="flex-1 border-2 border-stone-200 text-stone-600 px-6 py-4 rounded-full hover:bg-stone-50 transition-all font-semibold">
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SkyLifter Pro Modal -->
+    <div id="product-3-modal" class="modal hidden fixed inset-0 z-50 overflow-y-auto" role="dialog" aria-labelledby="product-3-title" aria-modal="true">
+        <div class="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:p-0">
+            <div class="modal-backdrop fixed inset-0 bg-stone-900/75 transition-opacity backdrop-blur-sm" onclick="closeModal('product-3-modal')"></div>
+            <div class="modal-content inline-block align-bottom bg-white rounded-[2.5rem] text-left overflow-hidden shadow-2xl transform transition-all sm:my-8 sm:align-middle sm:max-w-4xl sm:w-full p-8">
+                <div class="bg-white">
+                    <div class="flex justify-between items-start mb-8">
+                        <div>
+                            <h3 id="product-3-title" class="text-3xl font-bold text-stone-900">SkyLifter Pro</h3>
+                            <p class="text-accent font-semibold mt-1 text-lg">Heavy-Duty Cargo Drone</p>
+                        </div>
+                        <button onclick="closeModal('product-3-modal')" class="bg-stone-100 p-2 rounded-full text-stone-400 hover:text-stone-600 hover:bg-stone-200 transition-colors" aria-label="Close modal">
+                            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="prose max-w-none text-stone-600 mb-8">
+                        <p class="mb-4 text-lg">
+                            The SkyLifter Pro is our flagship cargo drone, engineered for enterprise logistics. With a 10kg payload, it's built to move bulk supplies, larger retail items, and industrial components efficiently.
+                        </p>
+                    </div>
+
+                    <div class="bg-accent/5 p-8 rounded-2xl mb-8 border border-accent/10">
+                        <h4 class="font-bold text-stone-900 mb-4 text-lg">Enterprise Features</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-center text-stone-700">
+                                <svg class="w-5 h-5 text-accent mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Hexa-rotor design for maximum lift capacity
+                            </li>
+                            <li class="flex items-center text-stone-700">
+                                <svg class="w-5 h-5 text-accent mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                IP67 weatherproofing for all-weather operations
+                            </li>
+                            <li class="flex items-center text-stone-700">
+                                <svg class="w-5 h-5 text-accent mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Extended battery system with 45-minute flight time
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <a href="contact.html" class="flex-1 bg-accent text-white px-6 py-4 rounded-full hover:bg-accent/90 transition-all font-semibold text-center shadow-lg shadow-accent/20">
+                            Request Quote
+                        </a>
+                        <button onclick="closeModal('product-3-modal')" class="flex-1 border-2 border-stone-200 text-stone-600 px-6 py-4 rounded-full hover:bg-stone-50 transition-all font-semibold">
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js?v=1.0.0" defer></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+# Cloudflare Pages Headers Configuration
+# This file configures cache control and security headers for optimal CDN performance
+
+# Cache static CSS files for 1 year (immutable)
+/css/*
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+
+# Cache static JavaScript files for 1 year (immutable)
+/js/*
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+
+# Cache images for 1 year
+/img/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Cache media files for 1 year
+/media/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Cache HTML files for 1 hour (revalidate to check for updates)
+/*.html
+  Cache-Control: public, max-age=3600, must-revalidate
+  X-Content-Type-Options: nosniff
+
+# Root index - short cache (5 minutes)
+/
+  Cache-Control: public, max-age=300, must-revalidate
+
+# Cache sitemap and robots.txt for 1 day
+/sitemap.xml
+  Cache-Control: public, max-age=86400
+
+/robots.txt
+  Cache-Control: public, max-age=86400
+
+# Security headers for all pages
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+  X-XSS-Protection: 1; mode=block

@@ -1,0 +1,10 @@
+# robots.txt for SkyLink Drone Delivery Website
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://skylink-delivery.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
